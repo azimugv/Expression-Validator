@@ -22,8 +22,7 @@ phone.addEventListener('click', validatePhone);
 
 function validatePhone() {
     var userPhone = prompt("Enter Your Phone Number: ");
-    // Phone Number
-// 01717888888 +8801717888888 8801717888888
+    // Phone Number validator for 11 digit
     var re = /^01[0-9]{9}$/;
     if (re.test(userPhone)) {
         alert("Phone Number is valid");
